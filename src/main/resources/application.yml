@@ -1,0 +1,21 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 4GB
+      max-file-size: 4GB
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./h2db/xxg
+    username: xiaosuange
+    password: minecraft
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
